@@ -2,7 +2,39 @@ package main
 
 import "fmt"
 
-func BELAJARTIPEDATA() {
+func main() {
+	// constanta adalah variable dg value yg tetap
+	const pi = 3.14159265359
+	fmt.Print("value dari pi adalah ", pi, "\n")
+
+	//operator aritmatika
+	var operasiAritmatika = (((2+6)%3)*4 - 2) / 3
+	fmt.Println("value dari var operasiAritmatika (((2+6)%3)*4 - 2) / 3 adalah ", operasiAritmatika)
+
+	// operator perbandingan
+	// nilai yg akan dibandingkan
+	var nilaiPertama = 3
+	var isEqual = (nilaiPertama == 2)
+
+	fmt.Printf("nilai %d (%t) \n", nilaiPertama, isEqual)
+
+	//operator logika
+	var left = false
+	var right = true
+
+	var leftAndRight = left && right
+	// \t maksudnya newtab
+	fmt.Printf("left && right \t(%t) \n", leftAndRight)
+
+	var leftOrRight = left || right
+	fmt.Printf("left || right \t(%t) \n", leftOrRight)
+
+	var leftReverse = !left
+	fmt.Printf("!left \t\t(%t) \n", leftReverse)
+
+}
+
+func belajarTipeData() {
 	//tipe data integer
 	// integer positif
 	var positiveNumber uint8 = 89
@@ -36,7 +68,7 @@ func BELAJARTIPEDATA() {
 	// NILAI NIL & ZERO VALUE
 }
 
-func BELAJARVARIABLE() {
+func belajarVariable() {
 	// deklarasi variable dg tipe datanya dan value
 	// var firstName string = "john"
 
