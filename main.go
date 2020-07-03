@@ -3,6 +3,44 @@ package main
 import "fmt"
 
 func main() {
+	// ifelse
+	// var point = 23
+
+	// if point == 10 {
+	// 	fmt.Println("lulus dengan nilai sempurna")
+	// } else if point > 5 {
+	// 	fmt.Println("lulus")
+	// } else if point == 4 {
+	// 	fmt.Println("hampir lulus")
+	// } else {
+	// 	fmt.Printf("tidak lulus. nilai anda %d\n", point)
+	// }
+
+	// temporary var pada ifelse
+	// var point = 8840.0
+
+	// if percent := point / 100; percent >= 100 {
+	// 	fmt.Printf("%.1f%s perfect!\n", percent, "%")
+	// } else if percent >= 70 {
+	// 	fmt.Printf("%.1f%s good\n", percent, "%")
+	// } else {
+	// 	fmt.Printf("%.1f%s not bad\n", percent, "%")
+	// }
+
+	// switch .. otomatis berhenti ketika kondisnya terpenuhi tidak butuh break
+	var point = 6
+
+	switch point {
+	case 8:
+		fmt.Println("perfect")
+	case 7:
+		fmt.Println("awesome")
+	default:
+		fmt.Println("not bad")
+	}
+}
+
+func belajarConstantaDanOperator() {
 	// constanta adalah variable dg value yg tetap
 	const pi = 3.14159265359
 	fmt.Print("value dari pi adalah ", pi, "\n")
