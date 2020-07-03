@@ -38,6 +38,78 @@ func main() {
 	default:
 		fmt.Println("not bad")
 	}
+
+	// switch with multiple default value
+	var pointMultiDefValue = 6
+
+	switch pointMultiDefValue {
+	case 8:
+		fmt.Println("perfect")
+	case 7, 6, 5, 4:
+		fmt.Println("awesome")
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you can be better!")
+		}
+	}
+
+	// switch with ifelse style
+	var pointIfelseStyle = 6
+
+	switch {
+	case pointIfelseStyle == 8:
+		fmt.Println("perfect")
+	case (pointIfelseStyle < 8) && (pointIfelseStyle > 3):
+		fmt.Println("awesome")
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you need to learn more")
+		}
+	}
+
+	// switch with fallthrough
+	var pointFall = 6
+
+	switch {
+	case pointFall == 8:
+		fmt.Println("perfect")
+	case (pointFall < 8) && (pointFall > 3):
+		fmt.Println("awesome")
+		fallthrough
+	case pointFall < 5:
+		fmt.Println("you need to learn more")
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you need to learn more")
+		}
+	}
+
+	// IF NESTED SWITCH
+	var pointNested = 10
+
+	if pointNested > 7 {
+		switch pointNested {
+		case 10:
+			fmt.Println("perfect!")
+		default:
+			fmt.Println("nice!")
+		}
+	} else {
+		if pointNested == 5 {
+			fmt.Println("not bad")
+		} else if pointNested == 3 {
+			fmt.Println("keep trying")
+		} else {
+			fmt.Println("you can do it")
+			if pointNested == 0 {
+				fmt.Println("try harder!")
+			}
+		}
+	}
+
 }
 
 func belajarConstantaDanOperator() {
