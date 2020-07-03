@@ -2,7 +2,41 @@ package main
 
 import "fmt"
 
-func main() {
+func BELAJARTIPEDATA() {
+	//tipe data integer
+	// integer positif
+	var positiveNumber uint8 = 89
+	var negativeNumber = -1233434343434 // otomatis diinference ke int
+	fmt.Printf("bilangan positif: %d\n", positiveNumber)
+	fmt.Printf("bilangan negatif: %d\n", negativeNumber)
+	fmt.Printf("var negativeNumber dengan value %d bertipe data %T\n", negativeNumber, negativeNumber)
+
+	//TTPE DATA FLOAT
+	var decimalNumber = 2.35
+	fmt.Printf("bilangan desimal: %f\n", decimalNumber)
+	// pembulatan 3 angka dibelakang koma
+	fmt.Printf("bilangan desimal: %.3f\n", decimalNumber)
+	fmt.Printf("var decimalNumber dengan value %f bertipe data %T\n", decimalNumber, decimalNumber)
+
+	//TIPE DATA BOOL
+	var exist bool = true
+	fmt.Printf("exist? var memiliki nilai boolean %t \n", exist)
+
+	//TIPE DATA STRING
+	// satu baris
+	var message = "hello"
+	fmt.Printf("var message memiliki nilai string: %s\n", message)
+
+	// multi baris dg backtick ``
+	var messagePanjang = `halo juga
+	nama saya "ngga penting", yg pe
+	nting tujuannya`
+	fmt.Printf(messagePanjang)
+
+	// NILAI NIL & ZERO VALUE
+}
+
+func BELAJARVARIABLE() {
 	// deklarasi variable dg tipe datanya dan value
 	// var firstName string = "john"
 
